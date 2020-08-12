@@ -2,13 +2,19 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Listen for XDebug",
       "type": "php",
-      "name": "Launch",
       "request": "launch",
-      "stopOnEntry": true,
+      "port": 9000
+    },
+    {
+      "name": "Launch currently open script",
+      "type": "php",
+      "request": "launch",
       "program": "${file}",
+      "stopOnEntry": true,
       "cwd": "${workspaceRoot}",
-      "externalConsole": false
+      "port": 9000
     }
   ]
 }
